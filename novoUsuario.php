@@ -4,7 +4,8 @@
 
 
 echo"<script> 
-	window.open('php/index.php','_self');
+	alert('Bem vindo');
+	window.open('menu.php','_self');
 </script> ";
 
 

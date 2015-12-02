@@ -22,7 +22,7 @@
 		 echo 'CATEGORIA :'.$ln['CATEGORIA'].'<br />';
 		 echo '<img src='.$ln["imagem"].' >';
          echo '<br><a href="carrinho1.php?acao=add&id='.$ln['idCodigo'].'">COMPRAR BRINQUEDO</a>';
-         echo '<br /><hr />';
+         echo '<br /><br/>';
       }
 ?>
  

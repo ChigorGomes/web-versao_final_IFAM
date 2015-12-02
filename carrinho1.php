@@ -80,7 +80,8 @@
                         echo '<tr><td colspan="5">Não há produto no carrinho</td></tr>';
                      }else{
                         require("conexao.php");
-                                                               $total = 0;
+                         $total = 0;
+                         $sub = 0;
                         foreach($_SESSION['carrinho'] as $id => $qtd){
                               $sql   = "SELECT *  FROM produtos WHERE idCodigo = '$id'";
                               $qr    = mysql_query($sql) or die(mysql_error());
@@ -88,9 +89,9 @@
                                
                               $nome  = $ln['nome'];
                               $preco = $ln["preco"];
-                              $sub   = $ln["preco"] ;
+                              $sub   = $preco * $qtd;
                                
-                               $total += $qtd*$id;
+                               $total += $sub;
                             
                            echo '<tr>       
                                  <td>'.$nome.'</td>
@@ -101,7 +102,6 @@
                               </tr>';
                         }
                           
-						  $total+=$total;
                            echo '<tr>
                                     <td colspan="4">Total</td>
                                     <td>R$ '.$total.'</td>

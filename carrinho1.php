@@ -17,7 +17,7 @@
             if(!isset($_SESSION['carrinho'][$id])){
                $_SESSION['carrinho'][$id] = 1;
             }else{
-               $_SESSION['carrinho'][$id] += 1;
+              # $_SESSION['carrinho'][$id] += 1;
             }
          }
          
@@ -123,8 +123,9 @@
 		foreach($_SESSION['carrinho'] as $id => $qtd){
 		$SqlInserirItens=mysql_query("INSERT INTO itemvenda(idvenda,idprod,qtde) values('$idvenda','$id','$qtd')");
         }
-		 echo" <script>alert('venda concluida')
-		 window.open('menu.php','_self')</script>";
+        session_destroy();
+		 echo" <script>
+		 window.open('LoginCompraFinalizada.php','_self')</script>";
 		}
 		
 		

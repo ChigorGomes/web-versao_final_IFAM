@@ -56,21 +56,6 @@
 		<tr><td>
 			<a href="../sysweb/FormConsultarItemVenda.php"> Consulta ItemVenda</a>
 		</td></tr>
-<<<<<<< HEAD
-=======
-		<tr>
-			<td>
-				<a href="../Promocao.php">Cadastra Promoção</a>
-			</td>
-		</tr>
-		<tr>
-			<td>
-				<a href="../consultaPromocao.php">Consulta Promoção</a>
-			</td>
-		</tr>
-
->>>>>>> origin/master
 	</table>
-
 </body>
 </html>

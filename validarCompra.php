@@ -13,7 +13,12 @@ try{
 	
 	if($result->rowCount()> 0){
 		$_SESSION["logado"]= true ;
-		header("location:finalizacaoCompra.php");
+	 
+		echo "<script>
+			alert('Finalização de compra!');
+			window.open('menu.php','_self');
+		 </script>";
+		
 	
 
 	}else{

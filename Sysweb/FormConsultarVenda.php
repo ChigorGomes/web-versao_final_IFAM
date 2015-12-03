@@ -44,8 +44,8 @@ try{
 			echo "<td>".$usr["valor"]."</td>";
 			
 			echo "<td>";
-			echo"<a href='FormAlteraCliente.php?id=".$usr["id"]."'>Alterar</a>";
-			echo"<a href='FormDeletaCliente.php?id=".$usr["id"]."'onclick=' return 
+			#echo"<a href='FormAlteraCliente.php?id=".$usr["id"]."'>Alterar</a>";
+			echo"<a href='excluiVenda.php?id=".$usr["id"]."'onclick=' return 
 			deletaCliente(".$usr["id"].")'>Excluir</a>";
 			echo "</td>";
 			echo"</tr>";

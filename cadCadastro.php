@@ -22,7 +22,7 @@ try{
 
 	if($insere){
 		echo "<script> alert('Dados inseridos com sucesso!');
-		window.open('home.php','_self')</script>";
+		window.open('LoginUsuario.php','_self')</script>";
 	}
 }catch(Exception $e){
 	echo 'Erro'. $e;

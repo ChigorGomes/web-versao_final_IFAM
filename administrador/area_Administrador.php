@@ -56,8 +56,6 @@
 		<tr><td>
 			<a href="../sysweb/FormConsultarItemVenda.php"> Consulta ItemVenda</a>
 		</td></tr>
-
-
 	</table>
 
 </body>

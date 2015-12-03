@@ -1,3 +1,5 @@
+<meta charset="utf-8">
+
 <?php
       session_start();
        
@@ -71,7 +73,7 @@
            <tr>
             <td colspan="5"><input type="submit" value="Atualizar Carrinho" /></td>
             <tr>
-            <td align ="right" colspan="5"><a href="php/menu3.php">Continuar Comprando</a></td>
+            <td align ="right" colspan="5"><a href="menu.php">Continuar Comprando</a></td>
     </tfoot>
       
     <tbody>
@@ -121,7 +123,8 @@
 		foreach($_SESSION['carrinho'] as $id => $qtd){
 		$SqlInserirItens=mysql_query("INSERT INTO itemvenda(idvenda,idprod,qtde) values('$idvenda','$id','$qtd')");
         }
-		 echo" <script>alert('venda concluida')</script>";
+		 echo" <script>alert('venda concluida')
+		 window.open('menu.php','_self')</script>";
 		}
 		
 		

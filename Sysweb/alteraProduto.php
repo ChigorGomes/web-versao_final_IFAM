@@ -33,20 +33,20 @@ if($results){
 			 <table align="center">
                 <tr>
                     <td class="campo"> Código: </td>
-                    <td colspan="3"> <input class="campo" type="text" name="txtCodigo" id="txtCodigo" value="<?=$codigo?>"> </td>
+                    <td colspan="3"> <input class="campo" type="text" name="txtCodigo" id="txtCodigo" value="<?=$codigo?>" required> </td>
                 </tr>
             <tr>
                 <td class="campo"> Produto: </td>
-                <td colspan="3"> <input class="campo" type="text" name="txtNome" id="txtNome" value="<?=$nome?>"> </td>
+                <td colspan="3"> <input class="campo" type="text" name="txtNome" id="txtNome" value="<?=$nome?>" required> </td>
             </tr>
             <tr>
                 <td class="campo"> Descrição: </td>
-                <td colspan="3"><textarea class="campo" id="txtDescricao" name = "txtDescricao"  rows="3" value="<?=$descricao?>" ></textarea> </td>
+                <td colspan="3"><textarea class="campo" id="txtDescricao" name = "txtDescricao"  rows="3" value="<?=$descricao?>"  required></textarea> </td>
             </tr>
             <tr>
                 <td class="campo"> Categoria: </td>
                 <td>
-                     <select  name="txtCategoria" id="txtCategoria">
+                     <select  name="txtCategoria" id="txtCategoria" required>
                         <?php
                             include ("conexaoBd.php");
                             try {
@@ -74,7 +74,7 @@ if($results){
 			</tr>
 			 <tr>
                     <td class="campo"> Preço: </td>
-                    <td colspan="3"> <input class="campo" type="text" name="txtPreco" id="txtPreco" value="<?=$preco?>"> </td>
+                    <td colspan="3"> <input class="campo" type="text" name="txtPreco" id="txtPreco" value="<?=$preco?>" required> </td>
              </tr>
              <tr>
 

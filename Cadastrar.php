@@ -13,14 +13,14 @@
 					<label for="txtNome">Nome:</label>
 				</td>
 				<td>
-					<input name="txtNome" id="txtNome" type="text" placeholder="fulano de tal" size="50">
+					<input name="txtNome" id="txtNome" type="text"   placeholder="fulano de tal" size="50" required>
 				</td>
 			<tr>
 				<td>
 					<label for="txtEmail">Email:</label>
 				</td>
 				<td>
-					<input name="txtEmail" id="txtEmail" type="email" placeholder="fulano@.com" size="50">
+					<input name="txtEmail" id="txtEmail" type="email" placeholder="fulano@.com" size="50" required>
 				</td>
 			</tr>
 			<tr>
@@ -28,7 +28,7 @@
 					<label for="txtSenha">Senha:</label>
 				</td>
 				<td>
-					<input  name="txtSenha" id="txtSenha" type="password"  size="50">
+					<input  name="txtSenha" id="txtSenha" type="password"  size="50" required>
 				</td>
 			</tr>
 			<tr>
@@ -36,7 +36,7 @@
 					<label>Data de Nascimento:</label>
 				</td>
 				<td>
-					<input type="date" name="txt_Nascimento" id="id_nascimento"  size="50">
+					<input type="date" name="txt_Nascimento" id="id_nascimento"  size="50" required>
 				</td>
 			</tr>
 			<tr>
@@ -44,7 +44,7 @@
 					<label>Estado Civil:</label>
 				</td>
 				<td>
-					<input type="text" name="txt_estadoC" id="id_estadoC"  size="50">
+					<input type="text" name="txt_estadoC" id="id_estadoC"  size="50" required>
 				</td>
 			</tr>
 			<tr>
@@ -52,7 +52,7 @@
 					<label>Sexo:</label>
 				</td>
 				<td>
-					<input type="text" name="txt_Sexo" id="id_sexo" size="50">
+					<input type="text" name="txt_Sexo" id="id_sexo" size="50" required>
 				</td>
 			</tr>
 			<tr>
@@ -60,7 +60,7 @@
 					<label>Rua:</label>
 				</td>
 				<td>
-					<input type="text" name="txt_Rua" id="id_rua"  size="50">
+					<input type="text" name="txt_Rua" id="id_rua"  size="50" required>
 				</td>
 			</tr>
 			<tr>
@@ -68,7 +68,7 @@
 					<label>Número:</label>
 				</td>
 				<td>
-					<input type="text" name="txt_Numero" id="id_Numero" size="50">
+					<input type="text" name="txt_Numero" id="id_Numero" size="50" required>
 				</td>
 			</tr>
 			<tr>
@@ -76,7 +76,7 @@
 					<label>Bairro:</label>
 				</td>
 				<td>
-					<input type="text" name="txt_Bairro" id="id_bairro"  size="50">
+					<input type="text" name="txt_Bairro" id="id_bairro"  size="50" required>
 				</td>
 			</tr>
 			<tr>
@@ -84,7 +84,7 @@
 					<label>Cidade:</label>
 				</td>
 				<td>
-					<input type="text" name="txt_Cidade" id="id_Cidade"  size="50">
+					<input type="text" name="txt_Cidade" id="id_Cidade"  size="50" required>
 				</td>
 			</tr>
 			<tr>
@@ -92,7 +92,7 @@
 					<label>Cep:</label>
 				</td>
 				<td>
-					<input type="text" name="txt_Cep" id="id_cep"  size="50">
+					<input type="text" name="txt_Cep" id="id_cep"  size="50" pattern="[0-9]{5}-[0-9]{3}" placeholder="00000-000" required>
 				</td>
 			</tr>
 			<tr>
@@ -100,7 +100,7 @@
 					<label>Telefone:</label>
 				</td>
 				<td>
-					<input type="text" name="txt_Telefone" id="id_Telefone"  size="50">
+					<input type="text" name="txt_Telefone" id="id_Telefone"  size="50" pattern="[0-9]{2}[0-9]{4,5}-[0-9]{4}" placeholder="00 0000-0000" required>
 				</td>
 			</tr>
 

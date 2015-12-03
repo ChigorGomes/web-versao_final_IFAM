@@ -11,7 +11,8 @@ include('../Sysweb/conexaoBd.php');
 	$insere = $conn->query($sql);
 	
 	if($insere){
-		echo "<script>alert('Dados inseridos com sucesso!')</script>";
+		echo "<script>alert('Dados inseridos com sucesso!')
+		window.open('../menu.php','_self')</script>";
 	}
 	}catch(Exception $e){
 		 echo "Erro". $e->getMessage();

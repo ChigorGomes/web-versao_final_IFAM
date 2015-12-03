@@ -7,7 +7,7 @@ function deletaMensagem(){
 <a href="../administrador/area_Administrador.php">Voltar página anterior</a>
 <form action ="formConsultaMensagem.php" method="post">
 <table align="center">
-<tr> <td colspan="3"> <strong>Formulario de Consulta de Usuarios</strong> </td> </tr>
+<tr> <td colspan="3"> <strong>Formulario de Consulta de Mensagem</strong> </td> </tr>
 <tr>
 <td>Tipo:</td> <td> <input type="text" name="tipo" size="50"></td>
 <td> <input type="submit" value="Buscar"> </td>

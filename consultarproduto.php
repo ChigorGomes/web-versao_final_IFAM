@@ -16,7 +16,7 @@
     <a href="administrador/area_Administrador.php" class="menu"> <b> Voltar a página Anterior </b> </a>
     <table class = "tableforma">
         <tr>
-            <p class = "tabela"> <strong > <h2>Consulta de Produto </h2> </strong> </p>
+            <p class = "tabela"> <strong > <h2>Consultar por Produtos </h2> </strong> </p>
         </tr>
         <tr>
             <td> <b> <h1>Nome:</h1> </b> </td>

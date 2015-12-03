@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Cadastro de Produto</title>
+	<title>Cadastro de Categoria</title>
 </head>
 <body>
 	<form action="CadastroCategoria.php" method="post">
@@ -13,7 +13,7 @@
 					<label>Categoria</label>
 				</td>
 				<td>
-					<input type="text" name="txtCategoria">
+					<input type="text" name="txtCategoria" required>
 				</td>
 			</tr>
 			<tr>

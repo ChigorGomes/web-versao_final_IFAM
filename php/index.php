@@ -31,7 +31,7 @@
 	 
 	 <div class="menu">
      <ul class="menu-list">
-     <li><a  href="menu3.php"  target="ligar">Home</a></li>
+     <li><a  href="../menu.php"  target="ligar">Home</a></li>
      <li>
       <a href="#">Meninos</a>
        <ul class="sub-menu">
@@ -68,7 +68,7 @@
   </div>
 	
 	<section>
-	<iframe src="menu3.php" name="ligar" > </iframe>
+	<iframe src="../menu.php" name="ligar" > </iframe>
 	</section>   
 	
 	

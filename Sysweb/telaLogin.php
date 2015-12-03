@@ -4,12 +4,12 @@
 
 <tr>
 <td >Login </td> 
-<td><input type="text " name="txtLogin"> </td>
+<td><input type="text " name="txtLogin" required> </td>
 
 </tr>
 <tr>
 <td>senha:</td>
-<td><input type="password" name="txtsenha" > </td>
+<td><input type="password" name="txtsenha"  required> </td>
 
 </tr>
 <tr>

@@ -29,7 +29,7 @@ if($results){
 </head>
 <body>
 	<a href="../administrador/area_Administrador.php">Voltar página anterior</a>
-	<form action="editaCliente.php" method="post" name="dados" onSubmit="return enviardados();">
+	<form action="editaCliente.php" method="post" name="dados">
 <table>
 	<tr>
 		<td colspan="2">Formulario de alteraçao de cliente </td>
@@ -39,14 +39,14 @@ if($results){
 					<label for="txtNome">Nome:</label>
 				</td>
 				<td>
-					<input name="txtNome" id="txtNome" type="text"  class="formbutton" placeholder="fulano de tal" size="50" maxlength="150" value="<?=$nome?>">
+					<input name="txtNome" id="txtNome" type="text"  class="formbutton" placeholder="fulano de tal" size="50" maxlength="150" value="<?=$nome?>" required>
 				</td>
 			<tr>
 				<td>
 					<label for="txtEmail">Email:</label>
 				</td>
 				<td>
-					<input name="txtEmail" id="txtEmail" type="email" placeholder="fulano@.com" size="50" value="<?=$email?>">
+					<input name="txtEmail" id="txtEmail" type="email" placeholder="fulano@.com" size="50" value="<?=$email?>" required>
 				</td>
 			</tr>
 			<tr>
@@ -54,7 +54,7 @@ if($results){
 					<label>Data de Nascimento:</label>
 				</td>
 				<td>
-					<input type="date" name="txt_Nascimento" id="id_nascimento"  size="50" value="<?=$data?>">
+					<input type="date" name="txt_Nascimento" id="id_nascimento"  size="50" value="<?=$data?>" requireed>
 				</td>
 			</tr>
 			<tr>
@@ -62,7 +62,7 @@ if($results){
 					<label>Estado Civil:</label>
 				</td>
 				<td>
-					<input type="text" name="txt_estadoC" id="id_estadoC"  size="50" value="<?=$estadoCivil?>">
+					<input type="text" name="txt_estadoC" id="id_estadoC"  size="50" value="<?=$estadoCivil?>" required>
 				</td>
 			</tr>
 			<tr>
@@ -70,7 +70,7 @@ if($results){
 					<label>Sexo:</label>
 				</td>
 				<td>
-					<input type="text" name="txt_Sexo" id="id_sexo" size="50" value="<?=$sexo?>">
+					<input type="text" name="txt_Sexo" id="id_sexo" size="50" value="<?=$sexo?>" required>
 				</td>
 			</tr>
 			<tr>
@@ -78,7 +78,7 @@ if($results){
 					<label>Rua:</label>
 				</td>
 				<td>
-					<input type="text" name="txt_Rua" id="id_rua"  size="50" value="<?=$rua?>">
+					<input type="text" name="txt_Rua" id="id_rua"  size="50" value="<?=$rua?>" required>
 				</td>
 			</tr>
 			<tr>
@@ -86,7 +86,7 @@ if($results){
 					<label>Número:</label>
 				</td>
 				<td>
-					<input type="text" name="txt_Numero" id="id_Numero" size="50" value="<?=$numero?>">
+					<input type="text" name="txt_Numero" id="id_Numero" size="50" value="<?=$numero?>" required>
 				</td>
 			</tr>
 			<tr>
@@ -94,7 +94,7 @@ if($results){
 					<label>Bairro:</label>
 				</td>
 				<td>
-					<input type="text" name="txt_Bairro" id="id_bairro"  size="50" value="<?=$bairro?>">
+					<input type="text" name="txt_Bairro" id="id_bairro"  size="50" value="<?=$bairro?>" required>
 				</td>
 			</tr>
 			<tr>
@@ -102,7 +102,7 @@ if($results){
 					<label>Cidade:</label>
 				</td>
 				<td>
-					<input type="text" name="txt_Cidade" id="id_Cidade"  size="50" value="<?=$cidade?>">
+					<input type="text" name="txt_Cidade" id="id_Cidade"  size="50" value="<?=$cidade?>" required>
 				</td>
 			</tr>
 			<tr>
@@ -110,7 +110,7 @@ if($results){
 					<label>Cep:</label>
 				</td>
 				<td>
-					<input type="text" name="txt_Cep" id="id_cep"  size="50" value="<?=$cep?>">
+					<input type="text" name="txt_Cep" id="id_cep"  size="50" value="<?=$cep?>" pattern="[0-9]{5}-[0-9]{3}" placeholder="00000-000" required>
 				</td>
 			</tr>
 			<tr>
@@ -118,7 +118,7 @@ if($results){
 					<label>Telefone:</label>
 				</td>
 				<td>
-					<input type="text" name="txt_Telefone" id="id_Telefone"  size="50" value="<?=$telefone?>">
+					<input type="tel" name="txt_Telefone" id="id_Telefone"  size="50" value="<?=$telefone?>" required>
 				</td>
 			</tr>
 			<tr>

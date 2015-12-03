@@ -60,20 +60,20 @@
             <table align="center">
                 <tr>
                     <td class="campo"> Código: </td>
-                    <td colspan="3"> <input class="campo" type="text" name="txtCodigo" id="txtCodigo"> </td>
+                    <td colspan="3"> <input class="campo" type="text" name="txtCodigo" id="txtCodigo"  pattern="[0-9]" required> </td>
                 </tr>
             <tr>
                 <td class="campo"> Produto: </td>
-                <td colspan="3"> <input class="campo" type="text" name="txtNome" id="txtNome"> </td>
+                <td colspan="3"> <input class="campo" type="text" name="txtNome" id="txtNome" required> </td>
             </tr>
             <tr>
                 <td class="campo"> Descrição: </td>
-                <td colspan="3"><textarea class="campo" id="txtDescricao" name = "txtDescricao" rows="3"></textarea> </td>
+                <td colspan="3"><textarea class="campo" id="txtDescricao" name = "txtDescricao" rows="3" required></textarea> </td>
             </tr>
             <tr>
                 <td class="campo"> Categoria: </td>
                 <td>
-                     <select  name="txtCategoria" id="txtCategoria">
+                     <select  name="txtCategoria" id="txtCategoria" required>
                         <?php
                             include ("Sysweb/conexaoBd.php");
                             try {
@@ -101,11 +101,11 @@
             </tr>
             <tr>
                 <td class="campo"> Preço: </td>
-                <td> <input class="campo" type="text" name="txtPreco" id="txtPreco"> </td>
+                <td> <input class="campo" type="text" name="txtPreco" id="txtPreco" required> </td>
             </tr>
             <tr>
                 <td colspan="3" class="campo">
-                    Selecione uma imagem: <input name="arquivo" type="file" />
+                    Selecione uma imagem: <input name="arquivo" type="file" required>
                     <br />
                 </td>
             </tr>

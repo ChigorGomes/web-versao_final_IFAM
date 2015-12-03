@@ -15,7 +15,7 @@ if($results){
 <table>
 <tr><td colspan="2">Formulario de Alteração de Categoria </td> </tr>
 <tr><td>Nome:
-<tr><td><input type="text" name="txtnome"  value="<?=$nome?>" > </td></tr>
+<tr><td><input type="text" name="txtnome"  value="<?=$nome?>"  required> </td></tr>
 <tr><td><input name="Submit" type="submit" value="alterar"/><input type="button"  value="voltar" onclick="history.back0">
 </td>
 </tr>

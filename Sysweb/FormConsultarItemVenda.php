@@ -9,7 +9,7 @@ function deletaCliente(){
 
    <form action ="FormConsultarItemVenda.php" method="post">
 <table align="center">
-<tr> <td colspan="3"> <strong>Formulario de Consulta de Clientes</strong> </td> </tr>
+<tr> <td colspan="3"> <strong>Formulario de Vendas</strong> </td> </tr>
 <tr>
 <td>IdVneda:</td> <td> <input type="text" name="idvenda" size="50"></td>
 <td> <input type="submit" value="Buscar"> </td>
@@ -46,8 +46,8 @@ try{
 			echo "<td>".$usr["idprod"]. "</td>";
 			echo "<td>".$usr["qtde"]. "</td>";
 			echo "<td>";
-			echo"<a href='FormAlteraCliente.php?id=".$usr["id"]."'>Alterar</a>";
-			echo"<a href='FormDeletaCliente.php?id=".$usr["id"]."'onclick=' return 
+			#echo"<a href='FormAlteraCliente.php?id=".$usr["id"]."'>Alterar</a>";
+			echo"<a href='excluiItemVenda.php?id=".$usr["id"]."'onclick=' return 
 			deletaCliente(".$usr["id"].")'>Excluir</a>";
 			echo "</td>";
 			echo"</tr>";

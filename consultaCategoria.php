@@ -1,6 +1,12 @@
 <meta charset="utf-8">
 <a href="administrador/area_Administrador.php">Voltar página anterior</a>
-	  
+ <style>
+        #imagem{
+            width: 100px;
+            height: 90px;
+        }
+
+    </style>	  
 
    <form action ="consultaCategoria.php" method="post">
 <table align="center">

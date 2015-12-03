@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Tela Login Usuário</title>
+	
 </head>
 <body>
 	<form action="validaLoginUsuario.php" method="post">
@@ -12,10 +13,10 @@
 			</tr>
 			<tr>
 				<td>
-					<label>Login:</label>
+					<label>Email:</label>
 				</td>
 				<td>
-					<input type="text" name="txtLogin" id="login_id">
+					<input type="email" name="txtLogin" id="login_id" required>
 				</td>
 			</tr>
 			<tr>
@@ -23,7 +24,7 @@
 					<label>Senha:</label>
 				</td>
 				<td>
-					<input type="password" name="txtSenha" id="senha_id">
+					<input type="password" name="txtSenha" id="senha_id" required>
 				</td>
 			</tr>
 			<tr>

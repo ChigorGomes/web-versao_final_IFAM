@@ -3,6 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <title>Upload</title>
+	<script src="java/validacaoJava.js"></script>
 </head>
 
 <body>
@@ -80,8 +81,8 @@ try{
 
     if($insere){
         echo   "<script>
-						alert('Produto Cadastrado com sucesso!');
-						window.open('php/trabalhe2.php', '_self');
+						alert('Curriculo Cadastrado com Sucesso!');
+						window.open('menu.php', '_self');
 					</script>";
     }
 }catch(Exception $e){
